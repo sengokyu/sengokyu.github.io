@@ -1,5 +1,5 @@
 ---
 layout: tags
-title: Posts By Tags
+title: タグ別全ての記事
 ---
 
