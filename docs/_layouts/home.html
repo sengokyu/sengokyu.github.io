@@ -1,9 +1,15 @@
 ---
-layout: default
+layout: base
 ---
 
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
+<div class="wrapper tag-chart-container">
+  <h1 class="page-heading">タグ別記事数グラフ</h1>
+  <svg id="tag-chart" width="600" height="300" viewbox="0 0 600 300"></svg>
+</div>
+
+<div class="wrapper">
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -61,3 +67,6 @@ layout: default
   {%- endif -%}
 
 </div>
+</div>
+
+{%- include tag-chart.html -%}
