@@ -1,0 +1,21 @@
+.wider-wrapper {
+  max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  margin-right: auto;
+  margin-left: auto;
+  @extend %clearfix;
+
+  @media screen and (min-width: $on-large) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2) + 100px);
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+  }
+}
+
+.tag-main {
+  padding-right: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+}
+
+.tag-chart-container {
+  margin-bottom: $spacing-unit;
+}
